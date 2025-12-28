@@ -1,0 +1,63 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+type Props = {
+  title?: string;
+  description?: string;
+};
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+} = Astro.props;
+
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+
+  <body>
+    <main>
+      <SiteHeader currentPath={currentPath} />
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <small>© {new Date().getFullYear()} {SITE_TITLE}</small>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :global(html) {
+    color-scheme: light;
+  }
+
+  :global(body) {
+    margin: 0;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 1.55;
+  }
+
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 2rem;
+  }
+
+  .site-footer {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 1.25rem 2.5rem;
+    opacity: 0.7;
+  }
+</style>
