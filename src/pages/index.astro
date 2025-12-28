@@ -1,71 +1,89 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+const published = "2025-12-28";
 ---
 
-<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <section class="hero">
-    <h1>
-      I work on questions of narrative, meaning, and coherence—how stories shape
-      human life, institutions, and moral imagination over long time horizons.
-    </h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Constraint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A constraint on reality, truth, and coherence."
+    />
+  </head>
 
-    <p>
-      The writing here is concerned less with expression than with structure: how
-      narratives hold, where they break, and what they make possible when they do.
-      I publish slowly, revise deliberately, and favor work that remains
-      intelligible even when context and fashion fall away.
-    </p>
+  <body>
+    <main>
+      <article>
+        <p>
+          Reality is not exhausted by what exists.
+        </p>
 
-    <p>
-      This site is not a feed. It is a record of thinking made public only when it
-      feels settled enough to stand.
-    </p>
+        <p>
+          What is <em>actual</em>—what operates, persists, or enforces
+          itself—can be false. What is <em>true</em>—what coheres,
+          corresponds, and endures—can be ignored. Conflating the two is
+          a category error with moral consequences.
+        </p>
 
-    <div class="links">
-      <a class="primary" href="/writing/">Writing →</a>
-      <a class="secondary" href="/about/">About →</a>
-    </div>
-  </section>
-</BaseLayout>
+        <p>
+          Modern life increasingly treats functionality as proof of
+          truth: that which stabilizes behavior is assumed legitimate;
+          that which persists is assumed justified. This is incoherent.
+        </p>
 
-<style>
-  .hero h1 {
-    font-size: 1.85rem;
-    line-height: 1.25;
-    margin: 0 0 1rem 0;
-    font-weight: 600;
-  }
+        <p>
+          Falsehoods can organize institutions. Lies can become
+          self-fulfilling. Power can simulate reality. None of this makes
+          them true.
+        </p>
 
-  .hero p {
-    margin: 0 0 1rem 0;
-    font-size: 1.05rem;
-  }
+        <p>
+          Truth is not whatever works. Truth is a constraint on what
+          <em>can</em> work indefinitely.
+        </p>
 
-  .links {
-    margin-top: 1.5rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
+        <p>
+          When actuality is mistaken for truth, suffering follows—not
+          because reality is harsh, but because it is misdescribed.
+          Individuals are asked to adapt to false premises. Institutions
+          are insulated from justification. Coherence is replaced by
+          compliance.
+        </p>
 
-  .links a {
-    text-decoration: none;
-    color: inherit;
-  }
+        <p>
+          Meaning does not arise from preference or invention. It arises
+          from intelligibility under constraint.
+        </p>
 
-  .links a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.25em;
-  }
+        <p>
+          A life, a narrative, or an institution is meaningful only
+          insofar as it remains coherent across time—logically,
+          morally, and causally. Stability without truth is temporary.
+          Comfort without coherence is anesthetic. Endurance without
+          intelligibility is impossible.
+        </p>
 
-  .primary {
-    font-weight: 600;
-  }
+        <p>
+          This position does not require agreement. It does not seek
+          consensus. It remains in force regardless of belief.
+        </p>
 
-  @media (max-width: 420px) {
-    .hero h1 {
-      font-size: 1.6rem;
-    }
-  }
-</style>
+        <p>
+          Where truth is subordinated to what merely functions, collapse
+          is delayed—not avoided.
+        </p>
+
+        <p>
+          That boundary is non-negotiable.
+        </p>
+
+        <footer>
+          <p>Published: {published}</p>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

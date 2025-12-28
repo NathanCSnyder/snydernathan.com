@@ -1,15 +1,9 @@
 ---
 import { SITE_TITLE } from "../consts";
-const { currentPath = "/" } = Astro.props;
 ---
 
 <header class="site-header">
   <a class="site-title" href="/" aria-label="Home">{SITE_TITLE}</a>
-
-  <nav class="site-nav" aria-label="Primary">
-    <a class={currentPath.startsWith("/writing") ? "active" : ""} href="/writing/">Writing</a>
-    <a class={currentPath.startsWith("/about") ? "active" : ""} href="/about/">About</a>
-  </nav>
 </header>
 
 <style>
@@ -29,27 +23,6 @@ const { currentPath = "/" } = Astro.props;
   }
 
   .site-title:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-
-  .site-nav {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .site-nav a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-
-  .site-nav a.active {
     text-decoration: underline;
     text-underline-offset: 0.2em;
   }
