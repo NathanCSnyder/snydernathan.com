@@ -1,89 +1,90 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE } from "../consts";
+
 const published = "2025-12-28";
+const pageTitle = `Constraint — ${SITE_TITLE}`;
+const description = "A constraint on reality, truth, and coherence.";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Constraint</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="A constraint on reality, truth, and coherence."
-    />
-  </head>
+<BaseLayout title={pageTitle} description={description}>
+  <article class="essay">
+    <p class="published">{published}</p>
 
-  <body>
-    <main>
-      <article>
-        <p>
-          Reality is not exhausted by what exists.
-        </p>
+    <p>Reality is not exhausted by what exists.</p>
 
-        <p>
-          What is <em>actual</em>—what operates, persists, or enforces
-          itself—can be false. What is <em>true</em>—what coheres,
-          corresponds, and endures—can be ignored. Conflating the two is
-          a category error with moral consequences.
-        </p>
+    <p>
+      What is <em>actual</em>—what operates, persists, or enforces itself—can be
+      false. What is <em>true</em>—what coheres, corresponds, and endures—can be
+      ignored. Conflating the two is a category error with moral consequences.
+    </p>
 
-        <p>
-          Modern life increasingly treats functionality as proof of
-          truth: that which stabilizes behavior is assumed legitimate;
-          that which persists is assumed justified. This is incoherent.
-        </p>
+    <p>
+      Modern life increasingly treats functionality as proof of truth: that which
+      stabilizes behavior is assumed legitimate; that which persists is assumed
+      justified. This is incoherent.
+    </p>
 
-        <p>
-          Falsehoods can organize institutions. Lies can become
-          self-fulfilling. Power can simulate reality. None of this makes
-          them true.
-        </p>
+    <p>
+      Falsehoods can organize institutions. Lies can become self-fulfilling.
+      Power can simulate reality. None of this makes them true.
+    </p>
 
-        <p>
-          Truth is not whatever works. Truth is a constraint on what
-          <em>can</em> work indefinitely.
-        </p>
+    <p>
+      Truth is not whatever works. Truth is a constraint on what <em>can</em>
+      work indefinitely.
+    </p>
 
-        <p>
-          When actuality is mistaken for truth, suffering follows—not
-          because reality is harsh, but because it is misdescribed.
-          Individuals are asked to adapt to false premises. Institutions
-          are insulated from justification. Coherence is replaced by
-          compliance.
-        </p>
+    <p>
+      When actuality is mistaken for truth, suffering follows—not because reality
+      is harsh, but because it is misdescribed. Individuals are asked to adapt to
+      false premises. Institutions are insulated from justification. Coherence is
+      replaced by compliance.
+    </p>
 
-        <p>
-          Meaning does not arise from preference or invention. It arises
-          from intelligibility under constraint.
-        </p>
+    <p>
+      Meaning does not arise from preference or invention. It arises from
+      intelligibility under constraint.
+    </p>
 
-        <p>
-          A life, a narrative, or an institution is meaningful only
-          insofar as it remains coherent across time—logically,
-          morally, and causally. Stability without truth is temporary.
-          Comfort without coherence is anesthetic. Endurance without
-          intelligibility is impossible.
-        </p>
+    <p>
+      A life, a narrative, or an institution is meaningful only insofar as it
+      remains coherent across time—logically, morally, and causally. Stability
+      without truth is temporary. Comfort without coherence is anesthetic.
+      Endurance without intelligibility is impossible.
+    </p>
 
-        <p>
-          This position does not require agreement. It does not seek
-          consensus. It remains in force regardless of belief.
-        </p>
+    <p>
+      This position does not require agreement. It does not seek consensus. It
+      remains in force regardless of belief.
+    </p>
 
-        <p>
-          Where truth is subordinated to what merely functions, collapse
-          is delayed—not avoided.
-        </p>
+    <p>
+      Where truth is subordinated to what merely functions, collapse is delayed—not
+      avoided.
+    </p>
 
-        <p>
-          That boundary is non-negotiable.
-        </p>
+    <p>That boundary is non-negotiable.</p>
+  </article>
+</BaseLayout>
 
-        <footer>
-          <p>Published: {published}</p>
-        </footer>
-      </article>
-    </main>
-  </body>
-</html>
+<style>
+  .essay {
+    max-width: 42rem;
+  }
+
+  .essay p {
+    font-size: 1.05rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .published {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-bottom: 2rem;
+  }
+
+  .essay p:last-child {
+    margin-bottom: 0;
+  }
+</style>
