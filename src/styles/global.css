@@ -1,0 +1,99 @@
+/* =========================================================
+   GLOBAL TYPOGRAPHY & LAYOUT
+   ========================================================= */
+
+/* Design constants */
+:root {
+  --text-color: #151515;
+  --max-measure: 40rem;
+}
+
+/* Predictable box model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base document */
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+
+  font-family: Charter, "Iowan Old Style", Palatino, Georgia, serif;
+  font-size: clamp(1.03rem, 0.35vw + 0.95rem, 1.15rem);
+  line-height: 1.65;
+
+  color: var(--text-color);
+  background: #ffffff;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================================
+   CONTENT LAYOUT
+   ========================================================= */
+
+article {
+  max-width: var(--max-measure);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 1.5rem);
+}
+
+/* Paragraph rhythm */
+article p {
+  margin: 0 0 1.2em 0;
+}
+
+article p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+  font-size: clamp(1.45rem, 0.7vw + 1.25rem, 1.65rem);
+  line-height: 1.25;
+  font-weight: 600;
+
+  margin: 0 0 1.6rem 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  font-weight: 600;
+
+  margin: 2.2rem 0 0.6rem 0;
+}
+
+/* =========================================================
+   METADATA
+   ========================================================= */
+
+.published,
+.meta {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 2.25rem;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: rgba(255, 255, 255, 0.9);
+  }
+
+  body {
+    background: #0f0f0f;
+  }
+}
