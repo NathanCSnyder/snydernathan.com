@@ -5,6 +5,12 @@
 /* Design constants */
 :root {
   --text-color: #151515;
+
+  /* Site container (header + content + footer alignment) */
+  --container: 44rem;
+  --pad-x: clamp(1rem, 4vw, 1.5rem);
+
+  /* Text measure (artifact / essay column) */
   --max-measure: 40rem;
 }
 
@@ -35,13 +41,39 @@ body {
 }
 
 /* =========================================================
+   SITE CONTAINER (ALIGN HEADER / FOOTER WITH CONTENT COLUMN)
+   ========================================================= */
+
+main,
+.site-footer__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-left: var(--pad-x);
+  padding-right: var(--pad-x);
+}
+
+main {
+  padding-top: clamp(2rem, 5vw, 3rem);
+  padding-bottom: 2rem;
+}
+
+.site-footer {
+  padding-bottom: 2.5rem;
+}
+
+.site-footer__inner {
+  opacity: 0.7;
+}
+
+/* =========================================================
    CONTENT LAYOUT
    ========================================================= */
 
+/* Keep article inside the site container but allow a tighter text measure */
 article {
   max-width: var(--max-measure);
-  margin: 0 auto;
-  padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 1.5rem);
+  margin: 0;
+  padding: 0;
 }
 
 /* Paragraph rhythm */

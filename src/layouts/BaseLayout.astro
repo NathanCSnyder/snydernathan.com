@@ -30,7 +30,9 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
     </main>
 
     <footer class="site-footer">
-      <small>© {new Date().getFullYear()} {SITE_TITLE}</small>
+      <div class="site-footer__inner">
+        <small>© {new Date().getFullYear()} {SITE_TITLE}</small>
+      </div>
     </footer>
   </body>
 </html>

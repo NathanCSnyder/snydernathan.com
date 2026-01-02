@@ -3,27 +3,7 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header class="site-header">
-  <a class="site-title" href="/" aria-label="Home">{SITE_TITLE}</a>
+  <a class="site-title" href="/" aria-label="Home">
+    {SITE_TITLE}
+  </a>
 </header>
-
-<style>
-  .site-header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  .site-title {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1rem;
-    letter-spacing: 0.02em;
-  }
-
-  .site-title:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-</style>
