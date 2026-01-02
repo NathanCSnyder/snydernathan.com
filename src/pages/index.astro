@@ -4,37 +4,59 @@ import { SITE_TITLE } from "../consts";
 
 const published = "2026-01-02";
 const pageTitle = `${SITE_TITLE}`;
-const description = "A constraint on reality, truth, and coherence.";
+const description = "Truth and the Intelligibility of Actuality";
 ---
 
 <BaseLayout title={pageTitle} description={description}>
   <article class="essay">
-    <p class="published">{published}</p>
+    <p class="published">
+      <time datetime={published}>{published}</time>
+    </p>
 
     <h1>Truth and the Intelligibility of Actuality</h1>
 
     <p>
-      What is real is not identical with what is actual. Falsehoods can exist, operate, and persist within reality, though not obtained as facts. When this distinction collapses, power replaces truth as the ordering principle of agency, through which actuality is shaped accordingly.
+      What is real is not identical with what is actual. Falsehoods can exist,
+      operate, and persist within reality, though not obtaining as facts. When
+      this distinction collapses, power replaces truth as the ordering principle
+      of agency, through which actuality is shaped accordingly.
     </p>
 
     <p>
-      Actuality is mutable and names what obtains at a given time. Truth is immutable, the external condition that constrains representations to actuality, determining whether representations correspond to what obtains. Actuality may change but does not alter truth; truth constrains correspondence regardless of what obtains.
+      Actuality is mutable and names what obtains at a given time. Truth is
+      immutable, the external condition that constrains representations to
+      actuality, determining whether representations correspond to what obtains.
+      Actuality may change but does not alter truth; truth constrains
+      correspondence regardless of what obtains.
     </p>
 
     <p>
-      Coherence is the internal condition of representation and concerns the consistency, integration, and stability of representations across time. Coherence alone does not guarantee truth, and truth alone does not guarantee coherence. Both conditions are necessary for intelligibility, and neither is sufficient on its own.
+      Coherence is the internal condition of representation and concerns the
+      consistency, integration, and stability of representations across time.
+      Coherence alone does not guarantee truth, and truth alone does not
+      guarantee coherence. Both conditions are necessary for intelligibility,
+      and neither is sufficient on its own.
     </p>
 
     <p>
-      Intelligibility is not a property of reality itself, nor of actuality in isolation. Intelligibility emerges where representations are both truth-constrained and coherent. It names the degree to which actuality can be navigated and responded to without resort to force, consensus, or arbitrary stabilization.
+      Intelligibility is not a property of reality itself, nor of actuality in
+      isolation. Intelligibility emerges where representations are both
+      truth-constrained and coherent. It names the degree to which actuality can
+      be navigated and responded to without resort to force, consensus, or
+      arbitrary stabilization.
     </p>
 
     <p>
-      Where intelligibility is preserved, revision is structurally admissible. Error can be identified without coercion, and change can proceed without enforcement. Where intelligibility is destroyed, agency defaults to power, and action becomes reactive and restricted.
+      Where intelligibility is preserved, revision is structurally admissible.
+      Error can be identified without coercion, and change can proceed without
+      enforcement. Where intelligibility is destroyed, agency defaults to power,
+      and action becomes reactive and restricted.
     </p>
 
     <p>
-      These conditions are not belief, argument, proposal, or justification. They do not depend on recognition, endorsement, or assent. They hold whether acknowledged or not, and no exception is tenable.
+      These conditions are not belief, argument, proposal, or justification.
+      They do not depend on recognition, endorsement, or assent. They hold
+      whether acknowledged or not, and no exception is tenable.
     </p>
   </article>
 </BaseLayout>
