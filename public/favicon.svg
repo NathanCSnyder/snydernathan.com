@@ -23,11 +23,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
-     inkscape:zoom="4.5259581"
-     inkscape:cx="65.621465"
-     inkscape:cy="64.406253"
+     inkscape:zoom="1"
+     inkscape:cx="66"
+     inkscape:cy="64.5"
      inkscape:window-width="1280"
-     inkscape:window-height="802"
+     inkscape:window-height="774"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="0"
@@ -35,15 +35,15 @@
   <defs
      id="defs1" />
   <rect
-     style="fill:#ffffff;stroke-width:0.264583;fill-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
      id="rect1"
      width="147.37296"
      height="131.49794"
-     x="-71.702087"
-     y="-64.293747" />
+     x="-56.310795"
+     y="-48.708149" />
   <g
      id="layer1"
-     transform="translate(10.108429,79.77395)">
+     transform="matrix(0.94,0,0,0.94,10.544465,76.009963)">
     <path
        d="m -10.10843,-45.69231 v -2.43086 l 3.001367,-0.421679 0.9177734,-0.917774 v -26.863476 l -0.7193359,-0.719336 -3.1998045,-0.248047 V -79.77395 H 1.5249681 v 1.364257 l 15.5525389,24.134961 v -21.753711 l -0.917773,-0.967382 -3.100586,-0.297657 v -2.480468 h 11.583789 v 2.480468 l -3.001368,0.297657 -0.868164,0.967382 V -45.69231 H 15.093132 L -2.4933912,-72.977466 v 23.514843 l 0.8185547,0.917774 3.1501953,0.421679 v 2.43086 z"
        id="text1"
